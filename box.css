@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+/*CSS originally from html page minus coloration and text formatting*/
+div.split {
+  display: inline-block;
+  vertical-align: top;
+}
+@media(min-width: 673px){
+div.scroller {
+  height: 95%;
+  overflow-y: scroll;
+}
+}
+.hidden {
+  display:none !important;
+}
+
+.sel {
+
+}
+.inline-multi {
+  display: inline-block;
+}
+.sel-label {
+  display: flex;
+  justify-content: flex-start;
+}
+div.sel-inner {
+  align-self: center;
+}
+div.multititle {
+  display: inline-block;
+}
+div.randButton {
+  font-size: 200%;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+/*Just some simple additions to  work on different window widths*/
+[class*='column_']{
+	width: 99%;
+	float: left;
+	padding:1em;
+}
+.padding{
+	margin-bottom:130px;
+}
+
+/*makes sellection button float on the bottom of window
+when there are two columns or less.*/
+@media(max-width:975px){
+	.win_column{
+		background-color:#E898FC;
+		position: fixed;
+		bottom: 0px;  
+		width:100%;
+		height:100px;
+		padding:1em;
+		margin-top:0em;
+	}
+}
+
+@media(min-width: 673px) {
+	.column_m{
+		width:45%;
+	}
+}
+
+@media(min-width: 976px) {
+	.column_l{
+		width:30%;	
+	}
+	.win_column{
+		width:30%;
+		float:left;
+		padding:1em;
+	}
+	.padding{
+		margin-bottom:1em;
+	}
+}
+
+/*Making the box selection more colorful and Berry Punch themed */
+
+.container{
+	background-color:#E898FC;
+	color:#590D39;
+}
+.activebox {
+	background-color: #C434E2;
+}
+.box {
+	margin-left:12.5%;
+	text-align:center;
+	width:75%;
+	cursor: pointer;
+}
+.box:hover{
+	background-color:#FFB8E0;
+}
+.winner{
+  background-color: #C434E2;
+  width:75%;
+  margin-left:12.5%;
+  text-align:center;
+  font-weight:bolder;
+  font-size:110%;
+}
+.winner_font{
+	font-size:150%;
+	margin-top:.5em;
+}
